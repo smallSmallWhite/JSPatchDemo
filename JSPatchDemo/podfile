@@ -1,0 +1,7 @@
+platform:ios,'8.0'
+use_frameworks!
+target 'JSPatchDemo' do 
+pod 'JSPatchPlatform'
+pod 'JSPatch/Extensions'
+pod 'JSPatch/JPCFunction'
+end

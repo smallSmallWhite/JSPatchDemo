@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import <JSPatchPlatform/JSPatch.h>
+#define APP_KEY @"16ea0be5bbd12b8d"
 @interface AppDelegate ()
 
 @end
@@ -16,7 +17,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [JSPatch startWithAppKey:APP_KEY];
+    [JSPatch sync];
+//    [JSPatch testScriptInBundle];
+    
     return YES;
 }
 

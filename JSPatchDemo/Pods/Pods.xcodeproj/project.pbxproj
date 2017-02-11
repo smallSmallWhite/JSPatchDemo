@@ -1,0 +1,798 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		006F1FB1E4292A1D13D6312F2D36D0C9 /* ffi_armv7.h in Headers */ = {isa = PBXBuildFile; fileRef = C37BBA3983112B9FA59127061E9F6A82 /* ffi_armv7.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		046B89AA931C8CCFEFBE497100B31D77 /* ffitarget_i386.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B05428950E3FF438570F4F75E5253EB /* ffitarget_i386.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0643BF77324ECB4F04AB13BA664614D4 /* sysv_armv7.S in Sources */ = {isa = PBXBuildFile; fileRef = D58C5B3BC52505E4736843193490A1A8 /* sysv_armv7.S */; };
+		0DA0F6FB426FED50BB4B9B7BB00CFDA6 /* fficonfig.h in Headers */ = {isa = PBXBuildFile; fileRef = F3A816548759A5611EFA9613828023BB /* fficonfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15AD72FA5FDC5CC1A36C7519B6708764 /* JPLocker.m in Sources */ = {isa = PBXBuildFile; fileRef = E52EEA3E69B6E84F35245EC1CA5A755F /* JPLocker.m */; };
+		15DB7936DBD6503CD0C22650161842A5 /* ffi64_x86_64.c in Sources */ = {isa = PBXBuildFile; fileRef = 821FF8CFEE6792CD5B6B5EB8C3A466B8 /* ffi64_x86_64.c */; };
+		18F4B5CEE9EDA2027254A8CF210F18EB /* darwin64_x86_64.S in Sources */ = {isa = PBXBuildFile; fileRef = 77D2CB9AC64E3363E0F3F127C63E72F1 /* darwin64_x86_64.S */; };
+		1D87E5F356D992FB04B149B5E2098EA2 /* ffi_common.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E468DFC4550FA22A5D3B866373940DE /* ffi_common.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		209E9B617D2824FCD123827C641DAF46 /* trampoline_armv7.S in Sources */ = {isa = PBXBuildFile; fileRef = D830AAE9677A1247A4A902271F3609C4 /* trampoline_armv7.S */; };
+		20CF3DD842566958D385043D9A2B50F4 /* JSPatch-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2095DCDFDC40990C06F27FDB569F4D65 /* JSPatch-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		215FC3E9ADDDDA40F2BCCC394BF776DC /* ffitarget_arm64.h in Headers */ = {isa = PBXBuildFile; fileRef = AC05C9B276E390EF3642B610568D1FA1 /* ffitarget_arm64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		252BAD23ACF0AC32B7684C51892623CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		27A60BBF191EC0B89C972E05B1B3430C /* fficonfig_arm64.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E162E9CD2B55C92F39DB4E37598864F /* fficonfig_arm64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35066546171EEB82DA1371BF2674CBA3 /* JPCleaner.h in Headers */ = {isa = PBXBuildFile; fileRef = A7A083A55103AFC626D6B2C476F38394 /* JPCleaner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38CF3765E1DC845E355539286863DE6D /* JPDispatch.h in Headers */ = {isa = PBXBuildFile; fileRef = A8B2DD326B402878B2D182245DA0F95E /* JPDispatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DFEB0A58A5FE76BB93B56D39E1FEA7B /* JPProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E6164419D32E5C1FB2D26121DD4882 /* JPProtocol.m */; };
+		40AAE1CAA761A2AC302E5869D56820BE /* sysv_arm64.S in Sources */ = {isa = PBXBuildFile; fileRef = 8B0C2649DCD5A942FF24431240305A43 /* sysv_arm64.S */; };
+		4395949EFBA042697AB0D4F7082D07C9 /* win32_i386.S in Sources */ = {isa = PBXBuildFile; fileRef = 2BD1C4A4DB2FBFA5E5DE428832524904 /* win32_i386.S */; };
+		5BC731F7AA0E1D8936735CDFFD2CD34D /* JPStructPointer.m in Sources */ = {isa = PBXBuildFile; fileRef = A31D3F23384A18ACD531507BD456BB19 /* JPStructPointer.m */; };
+		6182B3B55DB2112AB34132A7CD327F75 /* JPNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD7517B7EC38B90C5F38B34ECADEC06 /* JPNumber.m */; };
+		6561BA07E21915963C15CC6AAEC1F42C /* JPMemory.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DFE37431021499280F79212F66DECF /* JPMemory.m */; };
+		69906ADA81DAD85ADF847CC6942FE33D /* ffitarget_armv7.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D6A1DCFBFFF8733B112273D66E75BF9 /* ffitarget_armv7.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A0FFE40A4DDD42A3A4148B723137402 /* ffitarget.h in Headers */ = {isa = PBXBuildFile; fileRef = EA4F13028F72F07C4E85B899D9E76AE4 /* ffitarget.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7285E3245EF19C0B6D3662D9FD511CFE /* ffitarget_x86_64.h in Headers */ = {isa = PBXBuildFile; fileRef = E26E701A434B76FE102C45DDA9C69DE6 /* ffitarget_x86_64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72904FF5EF67801B60E727DD1B53C9DD /* JPSpecialInit.m in Sources */ = {isa = PBXBuildFile; fileRef = F36BAE1ECB192EC3ED4525E21AAF8B7F /* JPSpecialInit.m */; };
+		75FE1B74B8B5F5EF86FE3CD5AF48BFC6 /* ffi_x86_64.h in Headers */ = {isa = PBXBuildFile; fileRef = 436A9729D6D6AC05A9FFE885DF709AFD /* ffi_x86_64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		769803E68648F490A258007DDB2539EA /* ffi_armv7.c in Sources */ = {isa = PBXBuildFile; fileRef = CC606F16F940335175DBABE8CFCADB92 /* ffi_armv7.c */; };
+		854A40BE00F9CE790163A28B8CD7DFAE /* types.c in Sources */ = {isa = PBXBuildFile; fileRef = E0AFB4872E5BCD01F7CA7F5324D14FE8 /* types.c */; };
+		8BD5A8B0775EF2CD553BC5E14042B080 /* JPSpecialInit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1838204497BF467F8D57CC1860F6311F /* JPSpecialInit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C77EC0BABA95ED94458D2893719E0AF /* JPCFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = E9DC36F1B0701A696E29ED77C3849FCA /* JPCFunction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E7D6C0D58DA25EC5BD02D9A63E64B68 /* Pods-JSPatchDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 297D30B8A47FCA9E5C1FE7A9861E4F79 /* Pods-JSPatchDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		919AF8336EC513EAFBC3DFF60C61C413 /* JPEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9F3E9FEF78BC378823E79AE4B01DAD /* JPEngine.m */; };
+		9260ACC3A3F13BEBD9D854AE81F6F7C0 /* fficonfig_armv7.h in Headers */ = {isa = PBXBuildFile; fileRef = 72BA91D203C3B10F787D73E7C7187F6C /* fficonfig_armv7.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		96B17BFEFECCDF398D2C427DCA1B22F1 /* JPLocker.h in Headers */ = {isa = PBXBuildFile; fileRef = 539BB625CB7598F82F66778209FB5F4B /* JPLocker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		96F81734E9A83A60F4861526946A4694 /* raw_api.c in Sources */ = {isa = PBXBuildFile; fileRef = 597E27428F059EA3C9B6392B1DD645A1 /* raw_api.c */; };
+		AFDAF28DB133EEC94B5658F9F54F9F8A /* ffi_arm64.c in Sources */ = {isa = PBXBuildFile; fileRef = 8FE7C228CEF99ECD45ED66FDDAD038A4 /* ffi_arm64.c */; };
+		B4EBF3DE103FD21025143763776BAE96 /* JPCleaner.m in Sources */ = {isa = PBXBuildFile; fileRef = 246D393BFA998BF1596A19D8B5B807CA /* JPCleaner.m */; };
+		B7F34681F6994CCC2DACD56C8EE60EE7 /* JPNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D4C870DFBF5F39A0600D5E3374B121C /* JPNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF1DAED6749D10DDAE53AA2002B4C6F7 /* fficonfig_x86_64.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D9B3F23CCB69DD72A9FA119A5AE19C8 /* fficonfig_x86_64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C50FB8B8064C273E44A366440FB457EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		C7531A16A12721F437D98136A64A9909 /* Pods-JSPatchDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8227AC4BE13A9E8674E159144D85B854 /* Pods-JSPatchDemo-dummy.m */; };
+		CB4065258ED131D92A74FF6995E5BA1C /* JPCFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B7DD5A08BA90025759D30EFD92BDF5 /* JPCFunction.m */; };
+		CCED06E89DD38907010E89B8F4D5E101 /* darwin_i386.S in Sources */ = {isa = PBXBuildFile; fileRef = 0FC136D5E37DEAA5D4CB761FC237F6D1 /* darwin_i386.S */; };
+		D3AFC9C173C2C7A266E49D35AC6BBBBA /* ffi_i386.h in Headers */ = {isa = PBXBuildFile; fileRef = 60CB49D41A2BDF9AD4B977352B72D966 /* ffi_i386.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D941C85EB629E086FF25611ABDBAE6D4 /* ffi.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DE0F2B3E656F57BBBFAD502D9C31E86 /* ffi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA1127508CC47A932A0B6F7B43EC49CB /* fficonfig_i386.h in Headers */ = {isa = PBXBuildFile; fileRef = 09402E83E27BEEFABF4D8034BDEC931A /* fficonfig_i386.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD9481563C38D8ACEBA3B5149023B696 /* ffi_arm64.h in Headers */ = {isa = PBXBuildFile; fileRef = 58D0C29B2E2B4637A735104BDEEBF503 /* ffi_arm64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDAFB3963BC794F58D665C8BAE9C5559 /* JPEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = FF7B50C36A1A7E8267283050C461575C /* JPEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E737D0345425C1E0149AE9794E8B2F6C /* JPProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A931DB48EF46300C1F9121956F5A8E7 /* JPProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8611CC045BF135BF1F46085CE2DF6BA /* ffi_i386.c in Sources */ = {isa = PBXBuildFile; fileRef = 03AA2AD6C15AF4217C8CF0A9652546C3 /* ffi_i386.c */; };
+		EC9BE1F293C5DDCBA5770C16312FEFB3 /* JPMemory.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FF75D4E6DF652CB09184385FFA6B165 /* JPMemory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDFAB4B2BA7C6BF29C5AD9DADFD42365 /* JSPatch.js in Resources */ = {isa = PBXBuildFile; fileRef = F87CB04F08DF1A94AFC04A2D993A1A57 /* JSPatch.js */; };
+		EF37E4BAF0DA7A37A6FF609063399A70 /* JSPatch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 188D65DA93502461183DCA9D18F5D943 /* JSPatch-dummy.m */; };
+		F0EEA2594A41329B280C56C133205D23 /* JPStructPointer.h in Headers */ = {isa = PBXBuildFile; fileRef = 46525A81605249159ABD6FB036319858 /* JPStructPointer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F9B5A9351CD3BCB5E0B1CD9FEF72D7CC /* prep_cif.c in Sources */ = {isa = PBXBuildFile; fileRef = A979371A8CB6D38F1D4F314A2D0879F4 /* prep_cif.c */; };
+		FA17886B5732178448C2F912DC8572A2 /* JPDispatch.m in Sources */ = {isa = PBXBuildFile; fileRef = C005C1BB040D1B86734855D72238BA35 /* JPDispatch.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C6EF815798D87986863EBA9F96D510B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CCD6CD8E36BF79DAB16923EC136655A;
+			remoteInfo = JSPatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03AA2AD6C15AF4217C8CF0A9652546C3 /* ffi_i386.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ffi_i386.c; path = Extensions/JPCFunction/libffi/src/x86/ffi_i386.c; sourceTree = "<group>"; };
+		04DFE37431021499280F79212F66DECF /* JPMemory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JPMemory.m; path = Extensions/JPCFunction/JPMemory.m; sourceTree = "<group>"; };
+		09402E83E27BEEFABF4D8034BDEC931A /* fficonfig_i386.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fficonfig_i386.h; path = Extensions/JPCFunction/libffi/headers/fficonfig_i386.h; sourceTree = "<group>"; };
+		0FC136D5E37DEAA5D4CB761FC237F6D1 /* darwin_i386.S */ = {isa = PBXFileReference; includeInIndex = 1; name = darwin_i386.S; path = Extensions/JPCFunction/libffi/src/x86/darwin_i386.S; sourceTree = "<group>"; };
+		12978E0A0CB285BCEE5D7D8BCC8BA7E3 /* Pods-JSPatchDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JSPatchDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		1677216214B27C08B338A65A2B4FAE08 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1838204497BF467F8D57CC1860F6311F /* JPSpecialInit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JPSpecialInit.h; path = Extensions/JPSpecialInit.h; sourceTree = "<group>"; };
+		188D65DA93502461183DCA9D18F5D943 /* JSPatch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JSPatch-dummy.m"; sourceTree = "<group>"; };
+		1D9B3F23CCB69DD72A9FA119A5AE19C8 /* fficonfig_x86_64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fficonfig_x86_64.h; path = Extensions/JPCFunction/libffi/headers/fficonfig_x86_64.h; sourceTree = "<group>"; };
+		1DA47DDED4658A2FD06FDC3F2383DEE0 /* Pods-JSPatchDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-JSPatchDemo.modulemap"; sourceTree = "<group>"; };
+		1E468DFC4550FA22A5D3B866373940DE /* ffi_common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ffi_common.h; path = Extensions/JPCFunction/libffi/headers/ffi_common.h; sourceTree = "<group>"; };
+		2095DCDFDC40990C06F27FDB569F4D65 /* JSPatch-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JSPatch-umbrella.h"; sourceTree = "<group>"; };
+		246D393BFA998BF1596A19D8B5B807CA /* JPCleaner.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JPCleaner.m; path = Extensions/JPCleaner.m; sourceTree = "<group>"; };
+		297D30B8A47FCA9E5C1FE7A9861E4F79 /* Pods-JSPatchDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JSPatchDemo-umbrella.h"; sourceTree = "<group>"; };
+		2AFD80EA34B9150E17C28AC20072BBD1 /* JSPatch.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = JSPatch.modulemap; sourceTree = "<group>"; };
+		2BD1C4A4DB2FBFA5E5DE428832524904 /* win32_i386.S */ = {isa = PBXFileReference; includeInIndex = 1; name = win32_i386.S; path = Extensions/JPCFunction/libffi/src/x86/win32_i386.S; sourceTree = "<group>"; };
+		2C9F3E9FEF78BC378823E79AE4B01DAD /* JPEngine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JPEngine.m; path = JSPatch/JPEngine.m; sourceTree = "<group>"; };
+		3543AEE340C1EF054E85AEF47537355F /* Pods_JSPatchDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JSPatchDemo.framework; path = "Pods-JSPatchDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3756B38B74E4F51F17D164743B548F91 /* JSPatchPlatform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JSPatchPlatform.framework; sourceTree = "<group>"; };
+		3992578EF157DBACFE63866D34D2F101 /* Pods-JSPatchDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JSPatchDemo-frameworks.sh"; sourceTree = "<group>"; };
+		3A931DB48EF46300C1F9121956F5A8E7 /* JPProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JPProtocol.h; path = Extensions/JPProtocol.h; sourceTree = "<group>"; };
+		3D9272AEF766C6C4CADDBECF7B238245 /* JSPatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JSPatch.framework; path = JSPatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E162E9CD2B55C92F39DB4E37598864F /* fficonfig_arm64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fficonfig_arm64.h; path = Extensions/JPCFunction/libffi/headers/fficonfig_arm64.h; sourceTree = "<group>"; };
+		4228B2B738CB1418BE7E0B50796E3A86 /* JSPatch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSPatch.h; path = JSPatchPlatform.framework/Headers/JSPatch.h; sourceTree = "<group>"; };
+		436A9729D6D6AC05A9FFE885DF709AFD /* ffi_x86_64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ffi_x86_64.h; path = Extensions/JPCFunction/libffi/headers/ffi_x86_64.h; sourceTree = "<group>"; };
+		452AE7C0504A1A810BC8656C60DAC421 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46525A81605249159ABD6FB036319858 /* JPStructPointer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JPStructPointer.h; path = Extensions/JPCFunction/JPStructPointer.h; sourceTree = "<group>"; };
+		48B7DD5A08BA90025759D30EFD92BDF5 /* JPCFunction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JPCFunction.m; path = Extensions/JPCFunction/JPCFunction.m; sourceTree = "<group>"; };
+		4D4C870DFBF5F39A0600D5E3374B121C /* JPNumber.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JPNumber.h; path = Extensions/JPNumber.h; sourceTree = "<group>"; };
+		4D6A1DCFBFFF8733B112273D66E75BF9 /* ffitarget_armv7.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ffitarget_armv7.h; path = Extensions/JPCFunction/libffi/headers/ffitarget_armv7.h; sourceTree = "<group>"; };
+		539BB625CB7598F82F66778209FB5F4B /* JPLocker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JPLocker.h; path = Extensions/JPLocker.h; sourceTree = "<group>"; };
+		58D0C29B2E2B4637A735104BDEEBF503 /* ffi_arm64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ffi_arm64.h; path = Extensions/JPCFunction/libffi/headers/ffi_arm64.h; sourceTree = "<group>"; };
+		597E27428F059EA3C9B6392B1DD645A1 /* raw_api.c */ = {isa = PBXFileReference; includeInIndex = 1; name = raw_api.c; path = Extensions/JPCFunction/libffi/src/common/raw_api.c; sourceTree = "<group>"; };
+		5DFBD32A2267305027875D0C4FFB6DD6 /* Pods-JSPatchDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JSPatchDemo.release.xcconfig"; sourceTree = "<group>"; };
+		5FF75D4E6DF652CB09184385FFA6B165 /* JPMemory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JPMemory.h; path = Extensions/JPCFunction/JPMemory.h; sourceTree = "<group>"; };
+		60CB49D41A2BDF9AD4B977352B72D966 /* ffi_i386.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ffi_i386.h; path = Extensions/JPCFunction/libffi/headers/ffi_i386.h; sourceTree = "<group>"; };
+		6B05428950E3FF438570F4F75E5253EB /* ffitarget_i386.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ffitarget_i386.h; path = Extensions/JPCFunction/libffi/headers/ffitarget_i386.h; sourceTree = "<group>"; };
+		72BA91D203C3B10F787D73E7C7187F6C /* fficonfig_armv7.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fficonfig_armv7.h; path = Extensions/JPCFunction/libffi/headers/fficonfig_armv7.h; sourceTree = "<group>"; };
+		77D2CB9AC64E3363E0F3F127C63E72F1 /* darwin64_x86_64.S */ = {isa = PBXFileReference; includeInIndex = 1; name = darwin64_x86_64.S; path = Extensions/JPCFunction/libffi/src/x86/darwin64_x86_64.S; sourceTree = "<group>"; };
+		7DE0F2B3E656F57BBBFAD502D9C31E86 /* ffi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ffi.h; path = Extensions/JPCFunction/libffi/headers/ffi.h; sourceTree = "<group>"; };
+		821FF8CFEE6792CD5B6B5EB8C3A466B8 /* ffi64_x86_64.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ffi64_x86_64.c; path = Extensions/JPCFunction/libffi/src/x86/ffi64_x86_64.c; sourceTree = "<group>"; };
+		8227AC4BE13A9E8674E159144D85B854 /* Pods-JSPatchDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JSPatchDemo-dummy.m"; sourceTree = "<group>"; };
+		8B0C2649DCD5A942FF24431240305A43 /* sysv_arm64.S */ = {isa = PBXFileReference; includeInIndex = 1; name = sysv_arm64.S; path = Extensions/JPCFunction/libffi/src/aarch64/sysv_arm64.S; sourceTree = "<group>"; };
+		8CB6609F9BE69093893D8DA41718AE07 /* JSPatch.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JSPatch.xcconfig; sourceTree = "<group>"; };
+		8DD7517B7EC38B90C5F38B34ECADEC06 /* JPNumber.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JPNumber.m; path = Extensions/JPNumber.m; sourceTree = "<group>"; };
+		8FE7C228CEF99ECD45ED66FDDAD038A4 /* ffi_arm64.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ffi_arm64.c; path = Extensions/JPCFunction/libffi/src/aarch64/ffi_arm64.c; sourceTree = "<group>"; };
+		91E6164419D32E5C1FB2D26121DD4882 /* JPProtocol.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JPProtocol.m; path = Extensions/JPProtocol.m; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D4EFED25DE12F418930BD6A0FC0FDB5 /* Pods-JSPatchDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JSPatchDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A31D3F23384A18ACD531507BD456BB19 /* JPStructPointer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JPStructPointer.m; path = Extensions/JPCFunction/JPStructPointer.m; sourceTree = "<group>"; };
+		A7A083A55103AFC626D6B2C476F38394 /* JPCleaner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JPCleaner.h; path = Extensions/JPCleaner.h; sourceTree = "<group>"; };
+		A8B2DD326B402878B2D182245DA0F95E /* JPDispatch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JPDispatch.h; path = Extensions/JPDispatch.h; sourceTree = "<group>"; };
+		A979371A8CB6D38F1D4F314A2D0879F4 /* prep_cif.c */ = {isa = PBXFileReference; includeInIndex = 1; name = prep_cif.c; path = Extensions/JPCFunction/libffi/src/common/prep_cif.c; sourceTree = "<group>"; };
+		AC05C9B276E390EF3642B610568D1FA1 /* ffitarget_arm64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ffitarget_arm64.h; path = Extensions/JPCFunction/libffi/headers/ffitarget_arm64.h; sourceTree = "<group>"; };
+		C005C1BB040D1B86734855D72238BA35 /* JPDispatch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JPDispatch.m; path = Extensions/JPDispatch.m; sourceTree = "<group>"; };
+		C37BBA3983112B9FA59127061E9F6A82 /* ffi_armv7.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ffi_armv7.h; path = Extensions/JPCFunction/libffi/headers/ffi_armv7.h; sourceTree = "<group>"; };
+		CB2D290EC03A13490EF4E3CF11EB69F3 /* JSPatch-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JSPatch-prefix.pch"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CC606F16F940335175DBABE8CFCADB92 /* ffi_armv7.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ffi_armv7.c; path = Extensions/JPCFunction/libffi/src/arm/ffi_armv7.c; sourceTree = "<group>"; };
+		D0D32A26375899F3C102A55852E06FF3 /* Pods-JSPatchDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JSPatchDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		D58C5B3BC52505E4736843193490A1A8 /* sysv_armv7.S */ = {isa = PBXFileReference; includeInIndex = 1; name = sysv_armv7.S; path = Extensions/JPCFunction/libffi/src/arm/sysv_armv7.S; sourceTree = "<group>"; };
+		D830AAE9677A1247A4A902271F3609C4 /* trampoline_armv7.S */ = {isa = PBXFileReference; includeInIndex = 1; name = trampoline_armv7.S; path = Extensions/JPCFunction/libffi/src/arm/trampoline_armv7.S; sourceTree = "<group>"; };
+		E0AFB4872E5BCD01F7CA7F5324D14FE8 /* types.c */ = {isa = PBXFileReference; includeInIndex = 1; name = types.c; path = Extensions/JPCFunction/libffi/src/common/types.c; sourceTree = "<group>"; };
+		E26E701A434B76FE102C45DDA9C69DE6 /* ffitarget_x86_64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ffitarget_x86_64.h; path = Extensions/JPCFunction/libffi/headers/ffitarget_x86_64.h; sourceTree = "<group>"; };
+		E52EEA3E69B6E84F35245EC1CA5A755F /* JPLocker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JPLocker.m; path = Extensions/JPLocker.m; sourceTree = "<group>"; };
+		E9DC36F1B0701A696E29ED77C3849FCA /* JPCFunction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JPCFunction.h; path = Extensions/JPCFunction/JPCFunction.h; sourceTree = "<group>"; };
+		EA4F13028F72F07C4E85B899D9E76AE4 /* ffitarget.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ffitarget.h; path = Extensions/JPCFunction/libffi/headers/ffitarget.h; sourceTree = "<group>"; };
+		ECE459A6C84C7D327A29553D2A83DEA0 /* Pods-JSPatchDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JSPatchDemo-resources.sh"; sourceTree = "<group>"; };
+		F36BAE1ECB192EC3ED4525E21AAF8B7F /* JPSpecialInit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JPSpecialInit.m; path = Extensions/JPSpecialInit.m; sourceTree = "<group>"; };
+		F3A816548759A5611EFA9613828023BB /* fficonfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fficonfig.h; path = Extensions/JPCFunction/libffi/headers/fficonfig.h; sourceTree = "<group>"; };
+		F87CB04F08DF1A94AFC04A2D993A1A57 /* JSPatch.js */ = {isa = PBXFileReference; includeInIndex = 1; name = JSPatch.js; path = JSPatch/JSPatch.js; sourceTree = "<group>"; };
+		FF7B50C36A1A7E8267283050C461575C /* JPEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JPEngine.h; path = JSPatch/JPEngine.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B5FD5556DE1A2B7CA8A18BF9C20C0D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				252BAD23ACF0AC32B7684C51892623CE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		355C6A9BBF3DF6BA739DE4054565678E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C50FB8B8064C273E44A366440FB457EE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		004845776E8B4A2B6EBAF5DAF104053E /* JSPatchPlatform */ = {
+			isa = PBXGroup;
+			children = (
+				DCE8DFE888E4103FD479DC9ECDA97066 /* Core */,
+			);
+			name = JSPatchPlatform;
+			path = JSPatchPlatform;
+			sourceTree = "<group>";
+		};
+		21F7939D24CDF2C2240EE9DB0B93E6FC /* JPCFunction */ = {
+			isa = PBXGroup;
+			children = (
+				77D2CB9AC64E3363E0F3F127C63E72F1 /* darwin64_x86_64.S */,
+				0FC136D5E37DEAA5D4CB761FC237F6D1 /* darwin_i386.S */,
+				7DE0F2B3E656F57BBBFAD502D9C31E86 /* ffi.h */,
+				821FF8CFEE6792CD5B6B5EB8C3A466B8 /* ffi64_x86_64.c */,
+				8FE7C228CEF99ECD45ED66FDDAD038A4 /* ffi_arm64.c */,
+				58D0C29B2E2B4637A735104BDEEBF503 /* ffi_arm64.h */,
+				CC606F16F940335175DBABE8CFCADB92 /* ffi_armv7.c */,
+				C37BBA3983112B9FA59127061E9F6A82 /* ffi_armv7.h */,
+				1E468DFC4550FA22A5D3B866373940DE /* ffi_common.h */,
+				03AA2AD6C15AF4217C8CF0A9652546C3 /* ffi_i386.c */,
+				60CB49D41A2BDF9AD4B977352B72D966 /* ffi_i386.h */,
+				436A9729D6D6AC05A9FFE885DF709AFD /* ffi_x86_64.h */,
+				F3A816548759A5611EFA9613828023BB /* fficonfig.h */,
+				3E162E9CD2B55C92F39DB4E37598864F /* fficonfig_arm64.h */,
+				72BA91D203C3B10F787D73E7C7187F6C /* fficonfig_armv7.h */,
+				09402E83E27BEEFABF4D8034BDEC931A /* fficonfig_i386.h */,
+				1D9B3F23CCB69DD72A9FA119A5AE19C8 /* fficonfig_x86_64.h */,
+				EA4F13028F72F07C4E85B899D9E76AE4 /* ffitarget.h */,
+				AC05C9B276E390EF3642B610568D1FA1 /* ffitarget_arm64.h */,
+				4D6A1DCFBFFF8733B112273D66E75BF9 /* ffitarget_armv7.h */,
+				6B05428950E3FF438570F4F75E5253EB /* ffitarget_i386.h */,
+				E26E701A434B76FE102C45DDA9C69DE6 /* ffitarget_x86_64.h */,
+				E9DC36F1B0701A696E29ED77C3849FCA /* JPCFunction.h */,
+				48B7DD5A08BA90025759D30EFD92BDF5 /* JPCFunction.m */,
+				5FF75D4E6DF652CB09184385FFA6B165 /* JPMemory.h */,
+				04DFE37431021499280F79212F66DECF /* JPMemory.m */,
+				46525A81605249159ABD6FB036319858 /* JPStructPointer.h */,
+				A31D3F23384A18ACD531507BD456BB19 /* JPStructPointer.m */,
+				A979371A8CB6D38F1D4F314A2D0879F4 /* prep_cif.c */,
+				597E27428F059EA3C9B6392B1DD645A1 /* raw_api.c */,
+				8B0C2649DCD5A942FF24431240305A43 /* sysv_arm64.S */,
+				D58C5B3BC52505E4736843193490A1A8 /* sysv_armv7.S */,
+				D830AAE9677A1247A4A902271F3609C4 /* trampoline_armv7.S */,
+				E0AFB4872E5BCD01F7CA7F5324D14FE8 /* types.c */,
+				2BD1C4A4DB2FBFA5E5DE428832524904 /* win32_i386.S */,
+			);
+			name = JPCFunction;
+			sourceTree = "<group>";
+		};
+		24017DCFDB7EF254422308625A0E9739 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F87CB04F08DF1A94AFC04A2D993A1A57 /* JSPatch.js */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4833143D3B7A50533E80D10F59BA0509 /* Pods-JSPatchDemo */ = {
+			isa = PBXGroup;
+			children = (
+				452AE7C0504A1A810BC8656C60DAC421 /* Info.plist */,
+				1DA47DDED4658A2FD06FDC3F2383DEE0 /* Pods-JSPatchDemo.modulemap */,
+				9D4EFED25DE12F418930BD6A0FC0FDB5 /* Pods-JSPatchDemo-acknowledgements.markdown */,
+				12978E0A0CB285BCEE5D7D8BCC8BA7E3 /* Pods-JSPatchDemo-acknowledgements.plist */,
+				8227AC4BE13A9E8674E159144D85B854 /* Pods-JSPatchDemo-dummy.m */,
+				3992578EF157DBACFE63866D34D2F101 /* Pods-JSPatchDemo-frameworks.sh */,
+				ECE459A6C84C7D327A29553D2A83DEA0 /* Pods-JSPatchDemo-resources.sh */,
+				297D30B8A47FCA9E5C1FE7A9861E4F79 /* Pods-JSPatchDemo-umbrella.h */,
+				D0D32A26375899F3C102A55852E06FF3 /* Pods-JSPatchDemo.debug.xcconfig */,
+				5DFBD32A2267305027875D0C4FFB6DD6 /* Pods-JSPatchDemo.release.xcconfig */,
+			);
+			name = "Pods-JSPatchDemo";
+			path = "Target Support Files/Pods-JSPatchDemo";
+			sourceTree = "<group>";
+		};
+		66CB8FC228E15ECCABF62730E3E74AB0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A7A083A55103AFC626D6B2C476F38394 /* JPCleaner.h */,
+				246D393BFA998BF1596A19D8B5B807CA /* JPCleaner.m */,
+				A8B2DD326B402878B2D182245DA0F95E /* JPDispatch.h */,
+				C005C1BB040D1B86734855D72238BA35 /* JPDispatch.m */,
+				539BB625CB7598F82F66778209FB5F4B /* JPLocker.h */,
+				E52EEA3E69B6E84F35245EC1CA5A755F /* JPLocker.m */,
+				4D4C870DFBF5F39A0600D5E3374B121C /* JPNumber.h */,
+				8DD7517B7EC38B90C5F38B34ECADEC06 /* JPNumber.m */,
+				3A931DB48EF46300C1F9121956F5A8E7 /* JPProtocol.h */,
+				91E6164419D32E5C1FB2D26121DD4882 /* JPProtocol.m */,
+				1838204497BF467F8D57CC1860F6311F /* JPSpecialInit.h */,
+				F36BAE1ECB192EC3ED4525E21AAF8B7F /* JPSpecialInit.m */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				FF778AE6E8EA7C310EC9B9CA58DE1DDA /* Pods */,
+				E4B4D5F6588C9C36AC953AC4A22CD0B6 /* Products */,
+				DC03D51217C595F2546D5A8272076C22 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		86F93CCEE78BC52D0E13EE01FCA9A5CF /* JSPatch */ = {
+			isa = PBXGroup;
+			children = (
+				CC2F6D52F4C1217D4CC977DB34A9C7E5 /* Core */,
+				66CB8FC228E15ECCABF62730E3E74AB0 /* Extensions */,
+				21F7939D24CDF2C2240EE9DB0B93E6FC /* JPCFunction */,
+				B13604E29BF7E13C02FEE93B9B5E039A /* Support Files */,
+			);
+			name = JSPatch;
+			path = JSPatch;
+			sourceTree = "<group>";
+		};
+		B13604E29BF7E13C02FEE93B9B5E039A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1677216214B27C08B338A65A2B4FAE08 /* Info.plist */,
+				2AFD80EA34B9150E17C28AC20072BBD1 /* JSPatch.modulemap */,
+				8CB6609F9BE69093893D8DA41718AE07 /* JSPatch.xcconfig */,
+				188D65DA93502461183DCA9D18F5D943 /* JSPatch-dummy.m */,
+				CB2D290EC03A13490EF4E3CF11EB69F3 /* JSPatch-prefix.pch */,
+				2095DCDFDC40990C06F27FDB569F4D65 /* JSPatch-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/JSPatch";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC2F6D52F4C1217D4CC977DB34A9C7E5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				FF7B50C36A1A7E8267283050C461575C /* JPEngine.h */,
+				2C9F3E9FEF78BC378823E79AE4B01DAD /* JPEngine.m */,
+				24017DCFDB7EF254422308625A0E9739 /* Resources */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		DC03D51217C595F2546D5A8272076C22 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4833143D3B7A50533E80D10F59BA0509 /* Pods-JSPatchDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		DCE8DFE888E4103FD479DC9ECDA97066 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4228B2B738CB1418BE7E0B50796E3A86 /* JSPatch.h */,
+				F978B5DC26056181FEB122FBCFF8B4A0 /* Frameworks */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		E4B4D5F6588C9C36AC953AC4A22CD0B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D9272AEF766C6C4CADDBECF7B238245 /* JSPatch.framework */,
+				3543AEE340C1EF054E85AEF47537355F /* Pods_JSPatchDemo.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F978B5DC26056181FEB122FBCFF8B4A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3756B38B74E4F51F17D164743B548F91 /* JSPatchPlatform.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF778AE6E8EA7C310EC9B9CA58DE1DDA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				86F93CCEE78BC52D0E13EE01FCA9A5CF /* JSPatch */,
+				004845776E8B4A2B6EBAF5DAF104053E /* JSPatchPlatform */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		416950E24683E6698850359625FC3BC9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D941C85EB629E086FF25611ABDBAE6D4 /* ffi.h in Headers */,
+				DD9481563C38D8ACEBA3B5149023B696 /* ffi_arm64.h in Headers */,
+				006F1FB1E4292A1D13D6312F2D36D0C9 /* ffi_armv7.h in Headers */,
+				1D87E5F356D992FB04B149B5E2098EA2 /* ffi_common.h in Headers */,
+				D3AFC9C173C2C7A266E49D35AC6BBBBA /* ffi_i386.h in Headers */,
+				75FE1B74B8B5F5EF86FE3CD5AF48BFC6 /* ffi_x86_64.h in Headers */,
+				0DA0F6FB426FED50BB4B9B7BB00CFDA6 /* fficonfig.h in Headers */,
+				27A60BBF191EC0B89C972E05B1B3430C /* fficonfig_arm64.h in Headers */,
+				9260ACC3A3F13BEBD9D854AE81F6F7C0 /* fficonfig_armv7.h in Headers */,
+				DA1127508CC47A932A0B6F7B43EC49CB /* fficonfig_i386.h in Headers */,
+				BF1DAED6749D10DDAE53AA2002B4C6F7 /* fficonfig_x86_64.h in Headers */,
+				6A0FFE40A4DDD42A3A4148B723137402 /* ffitarget.h in Headers */,
+				215FC3E9ADDDDA40F2BCCC394BF776DC /* ffitarget_arm64.h in Headers */,
+				69906ADA81DAD85ADF847CC6942FE33D /* ffitarget_armv7.h in Headers */,
+				046B89AA931C8CCFEFBE497100B31D77 /* ffitarget_i386.h in Headers */,
+				7285E3245EF19C0B6D3662D9FD511CFE /* ffitarget_x86_64.h in Headers */,
+				8C77EC0BABA95ED94458D2893719E0AF /* JPCFunction.h in Headers */,
+				35066546171EEB82DA1371BF2674CBA3 /* JPCleaner.h in Headers */,
+				38CF3765E1DC845E355539286863DE6D /* JPDispatch.h in Headers */,
+				DDAFB3963BC794F58D665C8BAE9C5559 /* JPEngine.h in Headers */,
+				96B17BFEFECCDF398D2C427DCA1B22F1 /* JPLocker.h in Headers */,
+				EC9BE1F293C5DDCBA5770C16312FEFB3 /* JPMemory.h in Headers */,
+				B7F34681F6994CCC2DACD56C8EE60EE7 /* JPNumber.h in Headers */,
+				E737D0345425C1E0149AE9794E8B2F6C /* JPProtocol.h in Headers */,
+				8BD5A8B0775EF2CD553BC5E14042B080 /* JPSpecialInit.h in Headers */,
+				F0EEA2594A41329B280C56C133205D23 /* JPStructPointer.h in Headers */,
+				20CF3DD842566958D385043D9A2B50F4 /* JSPatch-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF5FDB9CBFA8803A2BED688E5D3BF351 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E7D6C0D58DA25EC5BD02D9A63E64B68 /* Pods-JSPatchDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3CCD6CD8E36BF79DAB16923EC136655A /* JSPatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9625D88DF579EFCCA7CD33CC7702575B /* Build configuration list for PBXNativeTarget "JSPatch" */;
+			buildPhases = (
+				584EE02CC47FB23F1FDA219F4E6C3D1E /* Sources */,
+				355C6A9BBF3DF6BA739DE4054565678E /* Frameworks */,
+				416950E24683E6698850359625FC3BC9 /* Headers */,
+				337D4CD67964A27B53CA4F7472AF3E9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JSPatch;
+			productName = JSPatch;
+			productReference = 3D9272AEF766C6C4CADDBECF7B238245 /* JSPatch.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5128B58AD7FB01F0D58095EE2987D527 /* Pods-JSPatchDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B3C9C511954FCBB3ECC2A3C6807CFEA /* Build configuration list for PBXNativeTarget "Pods-JSPatchDemo" */;
+			buildPhases = (
+				7473C20064F65397BFF43DC0F73DD2EB /* Sources */,
+				1B5FD5556DE1A2B7CA8A18BF9C20C0D1 /* Frameworks */,
+				BF5FDB9CBFA8803A2BED688E5D3BF351 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83081403CD65AD12D71833D5FD1F4518 /* PBXTargetDependency */,
+			);
+			name = "Pods-JSPatchDemo";
+			productName = "Pods-JSPatchDemo";
+			productReference = 3543AEE340C1EF054E85AEF47537355F /* Pods_JSPatchDemo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = E4B4D5F6588C9C36AC953AC4A22CD0B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3CCD6CD8E36BF79DAB16923EC136655A /* JSPatch */,
+				5128B58AD7FB01F0D58095EE2987D527 /* Pods-JSPatchDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		337D4CD67964A27B53CA4F7472AF3E9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDFAB4B2BA7C6BF29C5AD9DADFD42365 /* JSPatch.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		584EE02CC47FB23F1FDA219F4E6C3D1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F4B5CEE9EDA2027254A8CF210F18EB /* darwin64_x86_64.S in Sources */,
+				CCED06E89DD38907010E89B8F4D5E101 /* darwin_i386.S in Sources */,
+				15DB7936DBD6503CD0C22650161842A5 /* ffi64_x86_64.c in Sources */,
+				AFDAF28DB133EEC94B5658F9F54F9F8A /* ffi_arm64.c in Sources */,
+				769803E68648F490A258007DDB2539EA /* ffi_armv7.c in Sources */,
+				E8611CC045BF135BF1F46085CE2DF6BA /* ffi_i386.c in Sources */,
+				CB4065258ED131D92A74FF6995E5BA1C /* JPCFunction.m in Sources */,
+				B4EBF3DE103FD21025143763776BAE96 /* JPCleaner.m in Sources */,
+				FA17886B5732178448C2F912DC8572A2 /* JPDispatch.m in Sources */,
+				919AF8336EC513EAFBC3DFF60C61C413 /* JPEngine.m in Sources */,
+				15AD72FA5FDC5CC1A36C7519B6708764 /* JPLocker.m in Sources */,
+				6561BA07E21915963C15CC6AAEC1F42C /* JPMemory.m in Sources */,
+				6182B3B55DB2112AB34132A7CD327F75 /* JPNumber.m in Sources */,
+				3DFEB0A58A5FE76BB93B56D39E1FEA7B /* JPProtocol.m in Sources */,
+				72904FF5EF67801B60E727DD1B53C9DD /* JPSpecialInit.m in Sources */,
+				5BC731F7AA0E1D8936735CDFFD2CD34D /* JPStructPointer.m in Sources */,
+				EF37E4BAF0DA7A37A6FF609063399A70 /* JSPatch-dummy.m in Sources */,
+				F9B5A9351CD3BCB5E0B1CD9FEF72D7CC /* prep_cif.c in Sources */,
+				96F81734E9A83A60F4861526946A4694 /* raw_api.c in Sources */,
+				40AAE1CAA761A2AC302E5869D56820BE /* sysv_arm64.S in Sources */,
+				0643BF77324ECB4F04AB13BA664614D4 /* sysv_armv7.S in Sources */,
+				209E9B617D2824FCD123827C641DAF46 /* trampoline_armv7.S in Sources */,
+				854A40BE00F9CE790163A28B8CD7DFAE /* types.c in Sources */,
+				4395949EFBA042697AB0D4F7082D07C9 /* win32_i386.S in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7473C20064F65397BFF43DC0F73DD2EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7531A16A12721F437D98136A64A9909 /* Pods-JSPatchDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		83081403CD65AD12D71833D5FD1F4518 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JSPatch;
+			target = 3CCD6CD8E36BF79DAB16923EC136655A /* JSPatch */;
+			targetProxy = 3C6EF815798D87986863EBA9F96D510B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		015A368F878AC3E2CEAE21DDE8026304 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		0E00D96593CD244B64605EB3A26E5E88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0D32A26375899F3C102A55852E06FF3 /* Pods-JSPatchDemo.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-JSPatchDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JSPatchDemo/Pods-JSPatchDemo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_JSPatchDemo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2BA6B08A486C416A16D50574F71BAC8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CB6609F9BE69093893D8DA41718AE07 /* JSPatch.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JSPatch/JSPatch-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JSPatch/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JSPatch/JSPatch.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = JSPatch;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		44CDBB6D11DE06DB64D6268622BDC47E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E3B080783BB651BA295218FF3AD6709 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CB6609F9BE69093893D8DA41718AE07 /* JSPatch.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JSPatch/JSPatch-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JSPatch/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JSPatch/JSPatch.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = JSPatch;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ADF02FD0ACFE14A366B02218ADB0C30A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DFBD32A2267305027875D0C4FFB6DD6 /* Pods-JSPatchDemo.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-JSPatchDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JSPatchDemo/Pods-JSPatchDemo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_JSPatchDemo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				015A368F878AC3E2CEAE21DDE8026304 /* Debug */,
+				44CDBB6D11DE06DB64D6268622BDC47E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B3C9C511954FCBB3ECC2A3C6807CFEA /* Build configuration list for PBXNativeTarget "Pods-JSPatchDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E00D96593CD244B64605EB3A26E5E88 /* Debug */,
+				ADF02FD0ACFE14A366B02218ADB0C30A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9625D88DF579EFCCA7CD33CC7702575B /* Build configuration list for PBXNativeTarget "JSPatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BA6B08A486C416A16D50574F71BAC8F /* Debug */,
+				5E3B080783BB651BA295218FF3AD6709 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
